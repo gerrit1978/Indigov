@@ -1839,7 +1839,7 @@ a:link, a:visited {
 #header .block-menu ul.menu li {
   list-style: none;
   float: left;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 /* line 64, ../sass/styles.scss */
 #header .block-menu ul.menu li a {
@@ -1850,8 +1850,9 @@ a:link, a:visited {
 /* line 69, ../sass/styles.scss */
 #header .block-menu ul.menu li li {
   float: none;
+  margin-right: 0;
 }
-/* line 71, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 #header .block-menu ul.menu li li a {
   color: #82bee8;
   font-size: 1em;
@@ -1859,29 +1860,29 @@ a:link, a:visited {
 }
 
 /* Generic styles */
-/* line 83, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 #main {
   padding-top: 0;
 }
 
 /* Front page tagline */
-/* line 89, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 #main .region-highlighted {
   height: 250px;
   background: url(../images/bg-tagline.png) repeat-x center center;
 }
-/* line 92, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline {
   margin-bottom: 0;
 }
-/* line 94, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline .left {
   color: #f5822b;
   float: left;
   margin-top: 75px;
   width: 20%;
 }
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline .left .inner {
   margin-right: 8%;
   text-align: right;
@@ -1890,13 +1891,13 @@ a:link, a:visited {
   width: 50%;
   float: right;
 }
-/* line 108, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline .right {
   float: left;
   width: 80%;
   color: #82bee8;
 }
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline .right .inner {
   position: relative;
   top: 50px;
@@ -1904,21 +1905,21 @@ a:link, a:visited {
   font-size: 2em;
   line-height: 1.1;
 }
-/* line 118, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 #main .region-highlighted .block-front-tagline .right .inner strong {
   font-size: 3em;
 }
 
 /* Front page panels */
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 #main .front-left {
   width: 20%;
 }
-/* line 132, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 #main .front-center {
   width: 40%;
 }
-/* line 135, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 #main .front-right {
   width: 40%;
 }

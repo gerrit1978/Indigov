@@ -60,7 +60,7 @@ a:link, a:visited {
       li {
         list-style: none;
         float: left;
-        margin-right: 5%;
+        margin-right: 10%;
         a {
           color: $orange;
           font-size: 1.25em;
@@ -68,6 +68,7 @@ a:link, a:visited {
         }
         li {
           float: none;
+          margin-right: 0;
           a {
             color: $lightBlue;
             font-size: 1em;
