@@ -597,7 +597,7 @@ table {
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1220px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -1792,7 +1792,133 @@ tr.selected td {
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
+#page {
+  position: relative;
+}
+
+/* line 32, ../sass/styles.scss */
 body {
   font-family: "Varela Round";
+}
+
+/* line 36, ../sass/styles.scss */
+a:link, a:visited {
+  color: #82bee8;
+  font-weight: strong;
+  text-decoration: none;
+}
+
+/* Header & navigation */
+/* line 43, ../sass/styles.scss */
+#header {
+  position: relative;
+  min-height: 200px;
+  padding-top: 58px;
+  margin-bottom: 50px;
+}
+/* line 48, ../sass/styles.scss */
+#header a#logo {
+  position: absolute;
+  top: 60px;
+}
+/* line 52, ../sass/styles.scss */
+#header .region-header {
+  margin-left: 25%;
+}
+/* line 55, ../sass/styles.scss */
+#header .block-menu {
+  margin-bottom: 0;
+}
+/* line 57, ../sass/styles.scss */
+#header .block-menu ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 60, ../sass/styles.scss */
+#header .block-menu ul.menu li {
+  list-style: none;
+  float: left;
+  margin-right: 5%;
+}
+/* line 64, ../sass/styles.scss */
+#header .block-menu ul.menu li a {
+  color: #f5822b;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+/* line 69, ../sass/styles.scss */
+#header .block-menu ul.menu li li {
+  float: none;
+}
+/* line 71, ../sass/styles.scss */
+#header .block-menu ul.menu li li a {
+  color: #82bee8;
+  font-size: 1em;
+  text-transform: none;
+}
+
+/* Generic styles */
+/* line 83, ../sass/styles.scss */
+#main {
+  padding-top: 0;
+}
+
+/* Front page tagline */
+/* line 89, ../sass/styles.scss */
+#main .region-highlighted {
+  height: 250px;
+  background: url(../images/bg-tagline.png) repeat-x center center;
+}
+/* line 92, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline {
+  margin-bottom: 0;
+}
+/* line 94, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline .left {
+  color: #f5822b;
+  float: left;
+  margin-top: 75px;
+  width: 20%;
+}
+/* line 99, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline .left .inner {
+  margin-right: 8%;
+  text-align: right;
+  font-size: 1.75em;
+  line-height: 1.3;
+  width: 50%;
+  float: right;
+}
+/* line 108, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline .right {
+  float: left;
+  width: 80%;
+  color: #82bee8;
+}
+/* line 112, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline .right .inner {
+  position: relative;
+  top: 50px;
+  margin-left: 2%;
+  font-size: 2em;
+  line-height: 1.1;
+}
+/* line 118, ../sass/styles.scss */
+#main .region-highlighted .block-front-tagline .right .inner strong {
+  font-size: 3em;
+}
+
+/* Front page panels */
+/* line 129, ../sass/styles.scss */
+#main .front-left {
+  width: 20%;
+}
+/* line 132, ../sass/styles.scss */
+#main .front-center {
+  width: 40%;
+}
+/* line 135, ../sass/styles.scss */
+#main .front-right {
+  width: 40%;
 }
