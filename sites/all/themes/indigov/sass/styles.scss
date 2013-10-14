@@ -39,6 +39,10 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+p {
+  margin: 0.5em 0;
+}
+
 /* Header & navigation */
 #header {
   position: relative;
@@ -135,5 +139,26 @@ a:link, a:visited {
   }
   .front-right {
     width: 40%;
+  }
+}
+
+/* Page blocks */
+#main {
+  .field-name-field-page-blocks {
+    margin-left: -20px;
+    margin-top: 20px;
+    .field-collection-view {
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+      border: none;
+      width: 23%;
+      float: left;
+      padding-left: 20px;
+      .field-name-field-page-block-title {
+        color: $lightBlue;
+        font-size: 1.25em;
+      }
+    }
   }
 }
