@@ -144,3 +144,28 @@ function indigov_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+/**
+ * Preprocess Panels Pane -> used for the background of the title 
+ */
+function indigov_preprocess_panels_pane(&$variables) {
+  $variables['title'] = "<span>" . $variables['title'] . "</span>";
+  $variables['title_suffix'] = "<div class='hoekske'></div>";
+}
+
+/**
+ * Preprocess Blocks -> used for the background of the title 
+ */
+function indigov_process_block(&$variables) {
+  
+/*
+  if ($variables['block_html_id'] == 'block-menu-menu-team') {
+    print_r($variables);
+    exit();
+  }
+*/
+  if (isset($variables['title']) && strlen($variables['title'])) {
+	  $variables['title'] = "<span>" . $variables['title'] . "</span>";
+	  $variables['title_suffix'] = "<div class='block-hoekske'></div>";
+  }
+}

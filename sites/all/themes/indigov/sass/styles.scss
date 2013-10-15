@@ -31,6 +31,7 @@
 
 body {
   font-family: "Varela Round";
+  color: $bodyText;
 }
 
 a:link, a:visited {
@@ -43,44 +44,54 @@ p {
   margin: 0.5em 0;
 }
 
+strong {
+  color: $lightBlue;
+  font-weight: normal;
+}
+
 /* Header & navigation */
 #header {
   position: relative;
   min-height: 200px;
   padding-top: 58px;
   margin-bottom: 50px;
-  a#logo {
-    position: absolute;
-    top: 60px;
-  }
-  .region-header {
-    margin-left: 25%;
-  }
-  .block-menu {
-    margin-bottom: 0;
-    ul.menu {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-        float: left;
-        margin-right: 10%;
-        a {
-          color: $orange;
-          font-size: 1.25em;
-          text-transform: uppercase;
-        }
-        li {
-          float: none;
-          margin-right: 0;
-          a {
-            color: $lightBlue;
-            font-size: 1em;
-            text-transform: none;
-          }
-        }
-      }
-    }
+  .inner {
+    max-width: 1220px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  a#logo {
+	    position: absolute;
+	    top: 60px;
+	  }
+	  .region-header {
+	    margin-left: 25%;
+	  }
+	  .block-menu {
+	    margin-bottom: 0;
+	    ul.menu {
+	      margin: 0;
+	      padding: 0;
+	      li {
+	        list-style: none;
+	        float: left;
+	        margin-right: 10%;
+	        a {
+	          color: $orange;
+	          font-size: 1.25em;
+	          text-transform: uppercase;
+	        }
+	        li {
+	          float: none;
+	          margin-right: 0;
+	          a {
+	            color: $lightBlue;
+	            font-size: 1em;
+	            text-transform: none;
+	          }
+	        }
+	      }
+	    }
+	  }
   }
 }
 
@@ -89,42 +100,53 @@ p {
   padding-top: 0;
 }
 
-/* Front page tagline */
-#main {
+/* Highlighted blocks */
+#page {
   .region-highlighted {
     height: 250px;
     background: url(../images/bg-tagline.png) repeat-x center center;
-    .block-front-tagline {
+    margin-bottom: 20px;
+    .block-highlighted {
       margin-bottom: 0;
-	    .left {
-	      color: $orange;
-	      float: left;
-	      margin-top: 75px;
-	      width: 20%;
-	      .inner {
-	        margin-right: 8%;
-	        text-align: right;
-	        font-size: 1.75em;
-	        line-height: 1.3;
-	        width: 50%;
-	        float: right;
-	      }
-	    }
-	    .right {
-	      float: left;
-	      width: 80%;
-	      color: $lightBlue;
-	      .inner {
-          position: relative;
-          top: 50px;
-	        margin-left: 2%;
-	        font-size: 2em;
-	        line-height: 1.1;
-	        strong {
-	          font-size: 3em;
-	        }
-	      }
-	    }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+			    .left {
+			      color: $orange;
+			      float: left;
+			      margin-top: 75px;
+			      width: 20%;
+			      font-size: 0.875em;
+			      .inner {
+			        margin-right: 8%;
+			        text-align: right;
+			        font-size: 1.75em;
+			        line-height: 1.3;
+			        width: 60%;
+			        float: right;
+			      }
+			    }
+			    .right {
+			      float: left;
+			      width: 80%;
+			      color: $lightBlue;
+			      .inner {
+		          position: relative;
+		          top: 50px;
+			        margin-left: 2%;
+			        font-size: 2em;
+			        line-height: 1.1;
+			        strong {
+			          font-size: 3em;
+			        }
+			      }
+			    }
+        }
+      }
 	  }
   }
 }
@@ -133,12 +155,29 @@ p {
 #main {
   .front-left {
     width: 20%;
+    .panel-pane {
+      .pane-content {
+        padding-left: 20px;      
+      }
+    }
   }
   .front-center {
     width: 40%;
+    .panel-pane {
+      .pane-content {
+        border-left: 1px solid #444;
+        padding-left: 20px;
+      }
+    }
   }
   .front-right {
     width: 40%;
+    .panel-pane {
+      .pane-content {
+        border-left: 1px solid #444;
+        padding-left: 20px;
+      }
+    }
   }
 }
 
@@ -162,3 +201,244 @@ p {
     }
   }
 }
+
+/* Projects frontpage */
+#main {
+  .view-latest-projects {
+    ul.projects-front {
+      margin: 0;
+      padding: 0;
+      li.project {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+/* News frontpage */
+#main {
+  .view-news {
+    ul.news-items-front {
+      margin: 0;
+      padding: 0;
+      li.news-item {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+        list-style: none;
+        .date {
+          font-size: 0.825em;
+        }
+      }
+    }
+  }
+}
+
+/* News Overview page */
+#main {
+  .view-news {
+    ul.news-items {
+      margin: 0;
+      padding: 0;
+      li.news-item {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        list-style: none;
+        .title {
+          font-size: 1.25em;
+          line-height: 1;
+        }
+        .date {
+          font-size: 0.75em;
+          color: $orange;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* Left Sidebar */
+.region-sidebar-first {
+  /* Menu */
+  .block-menu {
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      margin-top: -50px;
+      li {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        list-style: none;
+        &.active-trail {
+          a {
+            font-weight: 900;
+            color: $darkBlue;
+          }
+        }
+      }
+    }
+  } 
+}
+
+body.sidebar-first {
+  #content {
+    border-left: 1px solid #444;
+    article {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* Block and Pane titles */
+.panel-pane	{
+  h2.pane-title {
+	  color: white;
+	  display: inline-block;
+	  font-size: 1em;
+	  font-weight: lighter;
+	  text-transform: uppercase;
+	  margin-bottom: 10px;
+	  background: $orange;
+	  position: relative;
+	  height: 40px;
+	  overflow: hidden;
+	  line-height: 30px;
+	  span {
+      margin: 0 8px;
+	  }
+	}
+	.hoekske {
+	  position: relative;
+	  top: -43px;
+	}
+	.pane-content {
+	  margin-top: -50px;
+	}
+}
+
+.block	{
+  h2.block-title {
+	  color: white;
+	  display: inline-block;
+	  font-size: 1em;
+	  font-weight: lighter;
+	  text-transform: uppercase;
+	  margin-bottom: 10px;
+	  background: $orange;
+	  position: relative;
+	  height: 40px;
+	  overflow: hidden;
+	  line-height: 30px;
+	  span {
+      margin: 0 8px;
+	  }
+	}
+	.block-hoekske {
+	  position: relative;
+	  top: -43px;
+	}
+}
+
+
+
+/*
+ * Footer
+ * Sticky footer: see http://www.cssstickyfooter.com/
+ */
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+  height: 100%;
+}
+
+#page-wrapper {
+  min-height: 100%;
+}
+
+#page-wrapper-inner {
+  overflow:auto;
+	padding-bottom: 440px;
+}
+
+#footer {
+  position: relative;
+	margin-top: -440px; /* negative value of footer height */
+	height: 440px;
+	clear:both;
+	background: url(../images/footer-bg.png) no-repeat center top;
+	.inner {
+	  max-width: 1220px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: 100px;
+	  a {
+	    color: white;
+	  }
+	  .block-secondary-menu {
+	    border-bottom: 2px solid white;
+	    padding-bottom: 20px;
+	    ul {
+	      margin: 0;
+	      padding: 0;
+	      text-align: right;
+	      li {
+	        margin: 0;
+	        padding: 0;
+	        list-style: none;
+	        display: inline-block;
+	        margin-right: 20px;
+	        &.last {
+	          margin-right: 0;
+	        }
+	      }
+	    }
+	  }
+	  .block-footer-links {
+	    ul.footer-links {
+	      margin: 0;
+	      padding: 0;
+	      li.footer-link {
+	        margin: 0;
+	        padding: 0;
+	        list-style: none;
+	        width: 20%;
+	        float: left;
+	        margin-bottom: 5px;
+	      }
+	    }
+	  }
+	}
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+*/
