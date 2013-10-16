@@ -66,15 +66,18 @@ function indigov_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function indigov_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
 
-  // Optionally, run node-type-specific preprocess functions, like
-  // indigov_preprocess_node_page() or indigov_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
+function indigov_preprocess_node(&$variables, $hook) {
+  if (isset($variables['submitted']) && strlen($variables['submitted'])) {
+    $author = user_load($variables['node']->uid);
+    $author_name = $author->name;
+  
+    $submit = t('Posted by !username on !postdate', array(
+      '!username' => $author_name,
+      '!postdate' => format_date($variables['node']->created, 'short'),
+    ));
+  
+    $variables['submitted'] = $submit;
   }
 }
 // */
@@ -131,6 +134,12 @@ function indigov_preprocess_block(&$variables, $hook) {
 }
 // */
 
+/**
+ * Implements theme_menu_link
+ *
+ * We do this to allow HTML in menu links
+ *
+ */
 function indigov_menu_link(array $variables) {
   $element = $variables['element'];
   
@@ -154,16 +163,12 @@ function indigov_preprocess_panels_pane(&$variables) {
 }
 
 /**
- * Preprocess Blocks -> used for the background of the title 
+ * Process Blocks -> used for the background of the title 
+ * We need to use process instead of preprocess since Zen
+ * does some processing of the block. The variable title
+ * is not available in preprocess yet
  */
 function indigov_process_block(&$variables) {
-  
-/*
-  if ($variables['block_html_id'] == 'block-menu-menu-team') {
-    print_r($variables);
-    exit();
-  }
-*/
   if (isset($variables['title']) && strlen($variables['title'])) {
 	  $variables['title'] = "<span>" . $variables['title'] . "</span>";
 	  $variables['title_suffix'] = "<div class='block-hoekske'></div>";
