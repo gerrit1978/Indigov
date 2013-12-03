@@ -1700,7 +1700,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1381318990');
+  background-image: url('../images/progress.gif?1382423827');
 }
 
 /**
@@ -2084,33 +2084,33 @@ input.error, textarea.error {
   margin-bottom: 0;
 }
 /* line 287, ../sass/styles.scss */
-#main .field-collection-container .field-name-field-page-blocks {
+#main .field-collection-container .row {
   margin-left: -20px;
   margin-top: 20px;
 }
 /* line 290, ../sass/styles.scss */
-#main .field-collection-container .field-name-field-page-blocks .field-collection-view {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  border: none;
+#main .field-collection-container .row .item {
   width: 23%;
   float: left;
   padding-left: 20px;
 }
-/* line 298, ../sass/styles.scss */
-#main .field-collection-container .field-name-field-page-blocks .field-collection-view .field-name-field-page-block-title {
+/* line 294, ../sass/styles.scss */
+#main .field-collection-container .row .item .title {
   color: #82bee8;
   font-size: 1.25em;
 }
+/* line 298, ../sass/styles.scss */
+#main .field-collection-container .row .item .subtitle {
+  color: #f5822b;
+}
 
 /* Projects frontpage */
-/* line 310, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 #main .view-latest-projects ul.projects-front {
   margin: 0;
   padding: 0;
 }
-/* line 313, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 #main .view-latest-projects ul.projects-front li.project {
   margin: 0;
   padding: 0;
@@ -2119,42 +2119,42 @@ input.error, textarea.error {
 }
 
 /* News frontpage */
-/* line 326, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 #main .view-news ul.news-items-front {
   margin: 0;
   padding: 0;
 }
-/* line 329, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 #main .view-news ul.news-items-front li.news-item {
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
   list-style: none;
 }
-/* line 334, ../sass/styles.scss */
+/* line 333, ../sass/styles.scss */
 #main .view-news ul.news-items-front li.news-item .date {
   font-size: 0.825em;
 }
 
 /* News Overview page */
-/* line 345, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 #main .view-news ul.news-items {
   margin: 0;
   padding: 0;
 }
-/* line 348, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 #main .view-news ul.news-items li.news-item {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
-/* line 353, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 #main .view-news ul.news-items li.news-item .title {
   font-size: 1.25em;
   line-height: 1;
 }
-/* line 357, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 #main .view-news ul.news-items li.news-item .date {
   font-size: 0.75em;
   color: #f5822b;
@@ -2162,40 +2162,40 @@ input.error, textarea.error {
 }
 
 /* Left Sidebar */
-/* line 368, ../sass/styles.scss */
+/* line 367, ../sass/styles.scss */
 .region-sidebar-first {
   /* Menu */
 }
-/* line 371, ../sass/styles.scss */
+/* line 370, ../sass/styles.scss */
 .region-sidebar-first .block-menu ul.menu {
   margin: 0;
   padding: 0;
   margin-top: -50px;
 }
-/* line 375, ../sass/styles.scss */
+/* line 374, ../sass/styles.scss */
 .region-sidebar-first .block-menu ul.menu li {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
   list-style: none;
 }
-/* line 381, ../sass/styles.scss */
+/* line 380, ../sass/styles.scss */
 .region-sidebar-first .block-menu ul.menu li.active-trail a {
   font-weight: 900;
   color: #5e8aa8;
 }
 
-/* line 392, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 body.sidebar-first #content {
   border-left: 1px solid #444;
 }
-/* line 394, ../sass/styles.scss */
+/* line 393, ../sass/styles.scss */
 body.sidebar-first #content article {
   margin-left: 10px;
 }
 
 /* Block and Pane titles */
-/* line 402, ../sass/styles.scss */
+/* line 401, ../sass/styles.scss */
 .panel-pane h2.pane-title {
   color: white;
   display: inline-block;
@@ -2209,21 +2209,21 @@ body.sidebar-first #content article {
   overflow: hidden;
   line-height: 30px;
 }
-/* line 414, ../sass/styles.scss */
+/* line 413, ../sass/styles.scss */
 .panel-pane h2.pane-title span {
   margin: 0 8px;
 }
-/* line 418, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 .panel-pane .hoekske {
   position: relative;
   top: -43px;
 }
-/* line 422, ../sass/styles.scss */
+/* line 421, ../sass/styles.scss */
 .panel-pane .pane-content {
   margin-top: -50px;
 }
 
-/* line 428, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 .block h2.block-title {
   color: white;
   display: inline-block;
@@ -2237,18 +2237,18 @@ body.sidebar-first #content article {
   overflow: hidden;
   line-height: 30px;
 }
-/* line 440, ../sass/styles.scss */
+/* line 439, ../sass/styles.scss */
 .block h2.block-title span {
   margin: 0 8px;
 }
-/* line 444, ../sass/styles.scss */
+/* line 443, ../sass/styles.scss */
 .block .block-hoekske {
   position: relative;
   top: -43px;
 }
 
 /* "Submitted by" text */
-/* line 451, ../sass/styles.scss */
+/* line 450, ../sass/styles.scss */
 .submitted {
   color: #f5822b;
   font-size: 0.825em;
@@ -2259,7 +2259,7 @@ body.sidebar-first #content article {
  * Footer
  * Sticky footer: see http://www.cssstickyfooter.com/
  */
-/* line 461, ../sass/styles.scss */
+/* line 460, ../sass/styles.scss */
 * {
   margin: 0;
   padding: 0;
@@ -2268,23 +2268,23 @@ body.sidebar-first #content article {
 /* must declare 0 margins on everything, also for main layout components use padding, not 
 vertical margins (top and bottom) to add spacing, else those margins get added to total height 
 and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
-/* line 470, ../sass/styles.scss */
+/* line 469, ../sass/styles.scss */
 html, body {
   height: 100%;
 }
 
-/* line 474, ../sass/styles.scss */
+/* line 473, ../sass/styles.scss */
 #page-wrapper {
   min-height: 100%;
 }
 
-/* line 478, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 #page-wrapper-inner {
   overflow: auto;
   padding-bottom: 440px;
 }
 
-/* line 483, ../sass/styles.scss */
+/* line 482, ../sass/styles.scss */
 #footer {
   position: relative;
   margin-top: -440px;
@@ -2293,29 +2293,29 @@ html, body {
   clear: both;
   background: url(../images/footer-bg.png) no-repeat center top;
 }
-/* line 489, ../sass/styles.scss */
+/* line 488, ../sass/styles.scss */
 #footer .inner {
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
 }
-/* line 494, ../sass/styles.scss */
+/* line 493, ../sass/styles.scss */
 #footer .inner a {
   color: white;
 }
-/* line 497, ../sass/styles.scss */
+/* line 496, ../sass/styles.scss */
 #footer .inner .block-secondary-menu {
   border-bottom: 2px solid white;
   padding-bottom: 20px;
 }
-/* line 500, ../sass/styles.scss */
+/* line 499, ../sass/styles.scss */
 #footer .inner .block-secondary-menu ul {
   margin: 0;
   padding: 0;
   text-align: right;
 }
-/* line 504, ../sass/styles.scss */
+/* line 503, ../sass/styles.scss */
 #footer .inner .block-secondary-menu ul li {
   margin: 0;
   padding: 0;
@@ -2323,16 +2323,16 @@ html, body {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 510, ../sass/styles.scss */
+/* line 509, ../sass/styles.scss */
 #footer .inner .block-secondary-menu ul li.last {
   margin-right: 0;
 }
-/* line 517, ../sass/styles.scss */
+/* line 516, ../sass/styles.scss */
 #footer .inner .block-footer-links ul.footer-links {
   margin: 0;
   padding: 0;
 }
-/* line 520, ../sass/styles.scss */
+/* line 519, ../sass/styles.scss */
 #footer .inner .block-footer-links ul.footer-links li.footer-link {
   margin: 0;
   padding: 0;
@@ -2343,12 +2343,12 @@ html, body {
 }
 
 /* Contact form */
-/* line 535, ../sass/styles.scss */
+/* line 534, ../sass/styles.scss */
 .webform-client-form .webform-component {
   clear: both;
   padding-bottom: 10px;
 }
-/* line 538, ../sass/styles.scss */
+/* line 537, ../sass/styles.scss */
 .webform-client-form .webform-component label {
   width: 20%;
   float: left;
@@ -2356,19 +2356,19 @@ html, body {
   line-height: 30px;
   font-weight: lighter;
 }
-/* line 545, ../sass/styles.scss */
+/* line 544, ../sass/styles.scss */
 .webform-client-form .webform-component input.form-text {
   float: left;
   width: 80%;
 }
-/* line 549, ../sass/styles.scss */
+/* line 548, ../sass/styles.scss */
 .webform-client-form .webform-component textarea {
   float: left;
   width: 80% !important;
 }
 
 /*Opera Fix*/
-/* line 557, ../sass/styles.scss */
+/* line 556, ../sass/styles.scss */
 body:before {
   /* thanks to Maleika (Kohoutec)*/
   content: "";

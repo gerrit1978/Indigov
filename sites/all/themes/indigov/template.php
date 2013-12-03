@@ -174,3 +174,46 @@ function indigov_process_block(&$variables) {
 	  $variables['title_suffix'] = "<div class='block-hoekske'></div>";
   }
 }
+
+/**
+ * Theme field__FIELD_NAME
+ */
+function indigov_field__field_page_blocks($variables) {
+  $output = '';
+
+  // first, define the number of rows
+  $number_of_rows = ceil(count($variables['items']) / 4);
+
+  for ($i = 0; $i < $number_of_rows; $i++) {
+    $output .= "<div class='row clearfix'>";
+    for ($j = 0; $j < 4; $j++) {
+      $body = "";
+      $delta = ($i * 4) + $j;
+      $field_collection_item_id = "";
+      $item = isset($variables['items'][$delta]['entity']['field_collection_item']) ? $variables['items'][$delta]['entity']['field_collection_item'] : array();
+      foreach ($item as $id => $dummy) {
+        $field_collection_item_id = $id;
+      }
+      if ($field_collection_item_id) {
+        $item_wrapper = entity_metadata_wrapper('field_collection_item', $field_collection_item_id);
+        $body = $item_wrapper->field_page_block_body->value();              
+        $item_output = array(
+          'title' => $item_wrapper->field_page_block_title->value(),
+	        'subtitle' => $item_wrapper->field_page_block_subtitle->value(),
+	        'body' => $body['value'],
+	      );
+        $output .= "<div class='item'>" 
+          . "<div class='title'>" . $item_output['title'] . "</div>";
+        if ($item_output['subtitle']) {
+          $output .= "<div class='subtitle'>" . $item_output['subtitle'] . "</div>";
+        }
+        $output .= "<div class='body'>" . $item_output['body'] . "</div>"
+          . "</div>";
+      }
+    }
+    $output .= "</div>";
+  }
+
+  return $output;
+
+}

@@ -284,23 +284,22 @@ input.error, textarea.error {
   .field-collection-container {
     border-bottom: none;
     margin-bottom: 0;
-    .field-name-field-page-blocks {
+    .row {
       margin-left: -20px;
       margin-top: 20px;
-	    .field-collection-view {
-	      margin: 0;
-	      margin-bottom: 40px;
-	      padding: 0;
-	      border: none;
-	      width: 23%;
-	      float: left;
+      .item {
+        width: 23%;
+        float: left;
 	      padding-left: 20px;
-	      .field-name-field-page-block-title {
+	      .title {
 	        color: $lightBlue;
 	        font-size: 1.25em;
 	      }
-	    }
-	  }
+	      .subtitle {
+	        color: $orange;
+	      }
+      }
+    }  
   }
 }
 
