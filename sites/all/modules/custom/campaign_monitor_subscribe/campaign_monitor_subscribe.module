@@ -56,7 +56,9 @@ function campaign_monitor_subscribe_menu() {
  */
 function _campaign_monitor_subscribe_render_block() {
 
-  $output = render(drupal_get_form('campaign_monitor_subscribe'));
+  $form = drupal_get_form('campaign_monitor_subscribe');
+
+  $output = render($form);
 	return $output;
 
 }
